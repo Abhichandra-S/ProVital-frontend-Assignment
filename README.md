@@ -1,6 +1,6 @@
 ### Live server on Vercel.com
 
-[Deployed Project](https://pro-vital-frontend-assignment.vercel.app/)
+[Deployed ProVital Project](https://pro-vital-frontend-assignment.vercel.app/)
 
 
 # Web Frontend Assignment - ProVital Homepage
