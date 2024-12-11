@@ -33,7 +33,7 @@ npm -v
 
 Here are some screenshots of the app:
 
-![Homepage Screenshot](public/assets/screenshot1.png)
+![Homepage Screenshot](public/assets/Screenshot1.png)
 *The homepage showing the app's main sections.*
 
-![Search Bar](public/assets/screenshot2.png)
+![Search Bar](public/assets/Screenshot2.png)
