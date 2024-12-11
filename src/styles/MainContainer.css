@@ -1,0 +1,19 @@
+/* MainContainer.css */
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+
+}
+.left-side,
+.right-side {
+  flex: 1;
+}
+  
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column-reverse;
+  }
+}
+  

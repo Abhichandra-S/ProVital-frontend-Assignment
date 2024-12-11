@@ -1,0 +1,181 @@
+/* Section Separator Line */
+.section-separator {
+  position: absolute;
+  width: 2200px;
+  height: 40px;
+  top: 680px;
+  left: 0;
+  background: linear-gradient(93.31deg, #f0c971, #e5688c);
+  transform: rotate(-1deg);
+  z-index: 2;
+}
+
+.how-it-works-section {
+  position: absolute;
+  top: 700px;
+  left: 80px;
+}
+
+.how-it-works {
+  position: absolute;
+  width: 200px;
+  height: 21px;
+  left: 126px;
+  top: 80px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 133%;
+  letter-spacing: 0.075em;
+  color: #707070;
+}
+
+.six-pillars-container {
+  position: absolute;
+  top: 100px;
+  left: 136px;
+  width: 600px;
+  font-family: 'Inter', sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 133%;
+}
+
+.six-pillars-title {
+  background: linear-gradient(289.5deg, #f1ca72 27.25%, #d96e6c 92.08%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.normal-text {
+  letter-spacing: -0.02em;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 133%;
+  color: #707070;
+  margin-left: 5px;
+}
+
+/* Horizontal Box with Items */
+.horizontal-box {
+  position: absolute;
+  width: 1001px;
+  height: 31px;
+  left: 136px;
+  top: 200px;
+  display: flex;
+  gap: 13px;
+}
+
+.pillars-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 16px;
+  border-radius: 25px;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.pillars-item.black {
+  background-color: #000;
+  color: #fff;
+}
+
+.pillars-item.white {
+  background-color: #fff;
+  border: 0.8px solid #d2d2d2;
+  color: #707070;
+  transition: 0.3ms;
+}
+
+.pillars-item.white:hover{
+  background-color: #000;
+  color: #fff;
+}
+
+.arrow-button1{
+  position: absolute;
+  top: 100px;
+  background-Color:white;
+  width:50px;
+  left: 1200px;
+  border-radius:50%;
+  margin:10px;
+  padding:10px;
+}
+
+.arrow-button2{
+  position: absolute;
+  top: 100px;
+  background-Color:white;
+  width:50px;
+  left: 1260px;
+  border-radius:50%;
+  margin:10px;
+  padding:10px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  /* Section Separator Line */
+  .section-separator {
+    width: 100%; /* Adjust to fit screen */
+    top: 500px; /* Adjust top position */
+  }
+
+  /* 'How It Works' Section */
+  .how-it-works-section {
+    top: 400px; /* Adjust top for mobile */
+    left: 20px; /* Align to left side */
+    width: 100%; /* Full width */
+  }
+
+  .how-it-works {
+    left: 20px; /* Align text to the left */
+    font-size: 14px; /* Reduce font size for mobile */
+  }
+
+  /* Six Pillars Container */
+  .six-pillars-container {
+    top: 160px;
+    left: 20px; /* Align text to left */
+    width: 100%; /* Full width */
+    font-size: 24px; /* Adjust font size for mobile */
+  }
+
+  /* Horizontal Box */
+  .horizontal-box {
+    top: 250px; /* Adjust top */
+    width: 100%; /* Full width */
+    flex-direction: column; /* Stack items vertically */
+    gap: 10px; /* Space out vertically */
+  }
+
+  .pillars-item {
+    width: 100%; /* Make items full width on mobile */
+    justify-content: flex-start; /* Align items to left */
+    font-size: 14px; /* Adjust font size */
+    padding: 10px; /* More padding for better touch interaction */
+  }
+
+  /* Arrow Buttons */
+  .arrow-button1,
+  .arrow-button2 {
+    width: 40px; /* Smaller buttons */
+    height: 40px; /* Adjust size */
+    top: 160px; /* Adjust vertical position */
+    left: 20px; /* Align to left */
+  }
+
+  /* Adjust margins and positioning */
+  .normal-text {
+    font-size: 20px; /* Adjust font size for mobile */
+    margin-left: 0; /* Remove left margin */
+  }
+}

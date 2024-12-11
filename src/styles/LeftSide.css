@@ -1,0 +1,88 @@
+.image-roam-container {
+  display: flex;
+  margin-left: 200px;
+  gap: 10px;
+  top: 92px;
+  width: 100%;
+  max-width: 580px;
+  height: 600px; /* Fixed height for the container */
+  overflow: hidden; /* Ensures overflow is hidden for cropped images */
+}
+
+.image-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 48%; /* Adjust width */
+  position: relative;
+}
+
+.image-item {
+  width: 100%; /* Full width for the images */
+  height: 354px; /* Fixed height for images */
+  border-radius: 16px;
+  object-fit: cover; /* Ensures images are cropped to fit the container */
+}
+
+/* Left column moves downward continuously */
+.left-column {
+  animation: slideDownContinuous 16s linear infinite; /* Adjust duration */
+}
+
+/* Right column moves upward continuously */
+.right-column {
+  animation: slideUpContinuous 16s linear infinite; /* Adjust duration */
+}
+
+/* Keyframes for smooth, continuous downward sliding of the left column */
+@keyframes slideDownContinuous {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-300%); /* Moves through three sets of images */
+  }
+}
+
+/* Keyframes for smooth, continuous upward sliding of the right column */
+@keyframes slideUpContinuous {
+  0% {
+    transform: translateY(-300%);
+  }
+  100% {
+    transform: translateY(0); /* Moves back to the starting point smoothly */
+  }
+}
+  
+
+/* Your existing CSS code */
+
+/* Mobile-specific layout */
+@media screen and (max-width: 800px) {
+  .image-roam-container {
+      margin-left: 20px;
+      max-width: 100%;
+      height: 350px; /* Adjust the height as needed for mobile */
+  }
+
+  .image-column {
+      width: auto; /* Allow width to adapt */
+      flex-direction: row; /* Align images in a row */
+      animation: slideLeftToRightContinuous 16s linear infinite; /* Apply the left-to-right animation */
+  }
+
+  .image-item {
+      height: 250px; /* Adjust height for mobile screens */
+      flex-shrink: 0; /* Prevent images from shrinking */
+  }
+}
+
+/* Keyframes for smooth, continuous left-to-right sliding of images */
+@keyframes slideLeftToRightContinuous {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-300%); /* Moves through three sets of images */
+  }
+}
