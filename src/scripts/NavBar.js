@@ -15,7 +15,7 @@ const NavBar = () => {
       <div className="inner-group">
         {/* Logo and Name Group */}
         <div className="logo-name-group">
-          <img src="/assets/vector.png" alt="Logo" className="logo" />
+          <img src="/assets/Vector.png" alt="Logo" className="logo" />
           <div className="logo-text">ProVital</div>
         </div>
 
