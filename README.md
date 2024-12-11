@@ -34,6 +34,9 @@ npm -v
 Here are some screenshots of the app:
 
 ![Homepage Screenshot](public/assets/Screenshot1.png)
+
 *The homepage showing the app's main sections.*
 
 ![Search Bar](public/assets/Screenshot2.png)
+
+P.S: I wanted to do the Backend too. But I currently don,t have knowledge on Express.js. I've worked lots of projects with MySQL but i mainly use Python for connectivity.
