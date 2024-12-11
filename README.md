@@ -1,3 +1,8 @@
+### Live server on Vercel.com
+
+[Deployed Project](https://pro-vital-frontend-assignment.vercel.app/)
+
+
 # Web Frontend Assignment - ProVital Homepage
 
 This is a web frontend assignment for the *ProVital* application homepage (as part of the hiring process), built with React, CSS and responsive design.
